@@ -5,6 +5,8 @@ import NewsCard from "../../../components/NewsCard";
 import formatDate from "../../../utils/formatDate";
 import Image from "next/image";
 
+export const revalidate = 3600;
+
 export default async function DetailBeritaPage({
   params,
 }: {
