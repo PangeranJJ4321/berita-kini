@@ -23,11 +23,11 @@ export default function NewsCard({
 
       <div className="flex flex-col gap-2">
         
-        <h3 className="line-clamp-2 text-lg font-bold leading-tight text-[var(--color-dark-900)] transition-colors group-hover:text-[var(--color-primary-500)]">
+        <h3 className="line-clamp-2 text-[16px] font-semibold leading-tight text-[var(--color-dark-900)] transition-colors group-hover:text-[var(--color-primary-500)]">
           {title}
         </h3>
         <div className="flex items-center gap-2">
-          <span className="text-sm font-bold uppercase tracking-wide text-[var(--color-primary-500)]">
+          <span className="text-sm font-semibold capitalize tracking-wide text-[var(--color-primary-500)]">
             {category}
           </span>
           <span className="text-sm font-medium text-gray-400">•</span>

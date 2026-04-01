@@ -17,7 +17,8 @@ const categoryEndpoints: Record<string, string> = {
 
 
 export async function fetchNewsByCategory(category: string): Promise<NewsItem[]> {
-  const endpoint = categoryEndpoints[category.toLowerCase()] || categoryEndpoints["terbaru"];
+  const catKey = (category || "terbaru").toLowerCase();
+  const endpoint = categoryEndpoints[catKey] || categoryEndpoints["terbaru"];
   
   try {
     const res = await fetch(endpoint, { next: { revalidate: 3600 } });
@@ -44,7 +45,7 @@ export async function fetchNewsByCategory(category: string): Promise<NewsItem[]>
         contentSnippet: item.contentSnippet || item.description || "",
         isoDate: item.isoDate || item.pubDate || new Date().toISOString(),
         image: imageUrl,
-        category: category,
+        category: catKey,
         slug: generateSlug(item.title || "berita")
       };
     });

@@ -4,6 +4,7 @@ import { fetchNewsByCategory, getPopularNews } from "../utils/api";
 import PopularNewsItem from "../components/PopularNewsItem";
 import HeroCarousel from "../components/HeroCarousel";
 import RecommendedSection from "../components/RecommendedSection";
+import PromoCarousel from "../components/PromoCarousel";
 
 
 export const revalidate = 3600;
@@ -16,7 +17,6 @@ export default async function Home() {
   const carouselData = latestNews.slice(0, 5);
   const populerList = popularNews.slice(0, 3);
 
-  // Menggabungkan beberapa berita terbaru (selain hero) dan hiburan untuk list rekomendasi yang lebih panjang
   const recomendedList = [
     ...latestNews.slice(5, 15), // Berita terbaru lainnya
     ...recomendedNews,           // Berita hiburan
@@ -54,9 +54,10 @@ export default async function Home() {
         </div>
       </section>
 
-
       <RecommendedSection initialNews={recomendedList} />
 
+      <PromoCarousel />
+      
     </div>
   );
 }
