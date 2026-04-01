@@ -39,7 +39,7 @@ export default async function CategoryPage({
         <div className="mb-12">
           <div className="flex items-center gap-4 mb-4">
             <div className="w-1.5 h-10 bg-[var(--color-primary-500)] rounded-full"></div>
-            <h1 className="text-[36px] font-bold text-[#1E293B] tracking-tight capitalize">
+            <h1 className="text-2xl sm:text-3xl lg:text-[40px] font-bold text-[#1E293B] tracking-tight capitalize">
               Berita {displayName}
             </h1>
           </div>

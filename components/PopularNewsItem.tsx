@@ -11,7 +11,7 @@ export default function PopularNewsItem({
   slug,
 }: PopularNewsItemProps) {
   return (
-    <div className="flex w-full items-start gap-4 bg-transparent py-2 pl-3 pr-6 border-r border-gray-200 last:border-r-0">
+    <div className="flex w-full min-w-[280px] md:min-w-[340px] flex-shrink-0 items-start gap-4 bg-transparent py-2 pl-3 pr-6 border-r border-gray-200 last:border-r-0">
       
       <div className="relative shrink-0">
         <div className="w-[120px] h-[120px] overflow-hidden rounded-[12px] bg-gray-100">

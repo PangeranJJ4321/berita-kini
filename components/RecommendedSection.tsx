@@ -93,16 +93,16 @@ export default function RecommendedSection({ initialNews }: RecommendedSectionPr
 
   return (
     <div className="mx-auto w-full max-w-[1296px] px-4 lg:px-8 py-12">
-      {/* HEADER: Berita & Search (Tetap Kiri-Kanan) */}
-      <div className="mb-10 flex flex-row items-center justify-between gap-6">
+      {/* HEADER: Berita & Search (Stacked on mobile, row on desktop) */}
+      <div className="mb-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
         <div className="flex items-center gap-4">
-          <div className="w-1.5 h-10 bg-[#0063FF] rounded-full"></div>
-          <h2 className="text-[28px] font-bold text-[#1E293B] tracking-tight">
+          <div className="w-1.5 h-8 md:h-10 bg-[#0063FF] rounded-full"></div>
+          <h2 className="text-xl md:text-[28px] font-bold text-[#1E293B] tracking-tight">
             Rekomendasi Untuk Anda
           </h2>
         </div>
 
-        <div className="relative w-full max-w-sm">
+        <div className="relative w-full md:max-w-sm">
           <input
             type="text"
             placeholder="Cari disini..."

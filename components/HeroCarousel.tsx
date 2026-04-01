@@ -30,11 +30,11 @@ export default function HeroCarousel({ newsList }: { newsList: any[] }) {
             Headline
           </span>
 
-          <h1 className="mb-6 font-bold text-[36px] leading-[120%] text-[#1E293B]">
+          <h1 className="mb-6 font-bold text-2xl sm:text-3xl lg:text-[36px] leading-[120%] text-[#1E293B]">
             {heroNews.title}
           </h1>
 
-          <p className="mb-6 text-[18px] leading-[160%] text-[#64748B] line-clamp-3">
+          <p className="mb-6 text-[16px] lg:text-[18px] leading-[160%] text-[#64748B] line-clamp-3">
             {heroNews.contentSnippet}
           </p>
 

@@ -45,10 +45,10 @@ export default async function DetailBeritaPage({
           <span className="text-gray-400 text-[16px]">Detail</span>
         </nav>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-22">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-22">
           <div className="lg:col-span-8 flex flex-col gap-6">
             <div className="flex flex-col gap-4">
-              <h1 className="text-3xl lg:text-4xl font-semibold leading-tight text-[var(--color-dark-900)] text-[36px]">
+              <h1 className="text-2xl sm:text-3xl lg:text-[40px] font-bold leading-tight text-[var(--color-dark-900)]">
                 {currentNews.title}
               </h1>
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-b border-gray-200 pb-6 pt-2">
