@@ -1,0 +1,33 @@
+
+> berita-kini@0.1.0 build G:\tes-frontend\berita-kini
+> next build
+
+Γû▓ Next.js 16.2.2 (Turbopack)
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 10.4s
+  Running TypeScript ...
+  Finished TypeScript in 9.7s ...
+  Collecting page data using 6 workers ...
+  Generating static pages using 6 workers (0/4) ...
+  Generating static pages using 6 workers (1/4) 
+  Generating static pages using 6 workers (2/4) 
+  Generating static pages using 6 workers (3/4) 
+Error fetching news for terbaru: Error: Failed to fetch terbaru news
+    at e (G:\tes-frontend\berita-kini\.next\server\chunks\ssr\_0-zu646._.js:1:630)
+    at async o (G:\tes-frontend\berita-kini\.next\server\chunks\ssr\[root-of-the-server]__01eqota._.js:1:2378)
+Error fetching news for terbaru: Error: Failed to fetch terbaru news
+    at e (G:\tes-frontend\berita-kini\.next\server\chunks\ssr\_0-zu646._.js:1:630)
+    at async o (G:\tes-frontend\berita-kini\.next\server\chunks\ssr\[root-of-the-server]__01eqota._.js:1:2423)
+Γ£ô Generating static pages using 6 workers (4/4) in 7.5s
+  Finalizing page optimization ...
+
+Route (app)             Revalidate  Expire
+Γöî Γùï /                           1h      1y
+Γö£ Γùï /_not-found
+Γöö ╞Æ /[kategori]/[slug]
+
+
+Γùï  (Static)   prerendered as static content
+╞Æ  (Dynamic)  server-rendered on demand
+
